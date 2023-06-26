@@ -1,0 +1,137 @@
+/* resetting default padding and margin to every element */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    
+   
+    padding: 40px;
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url('bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#realtime-clock{
+    background: rgba(145, 190, 186, 0.744);
+    text-align: center;
+    margin-bottom:60px;
+    padding: 50px;
+    border-style: dotted black;
+    border-radius: 20px;
+
+}
+
+#realtime-clock span{
+    font-size: 3rem ;
+    font-family: serif;
+    padding: 5px;
+    color:white;
+}
+
+/* alarm input styling */
+
+
+#alarm-input-container{
+    width: 90%;
+    margin: 8px;
+    text-align: center;
+    
+}
+
+.alarm-input-group{
+    height: 32px;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.alarm-input-group:focus,
+.alarm-input-group:active{
+    border: 1px solid rgb(237, 7, 7);
+    border-radius: none;
+    outline: none;
+}
+
+#alarm-title-input-box{
+    width: 90%;
+    min-width: 100px;
+    max-width: 450px;
+}
+
+#alarm-time-input-box{
+    width: 90%;
+    min-width: 100px;
+    max-width: 450px;
+    letter-spacing: 2px;
+}
+
+#alarm-submit-btn{
+   width: 90%;
+    min-width: 100px;
+    max-width: 450px;
+   background: rgb(10, 211, 40);
+}
+
+
+
+
+
+/* alarm list styling */
+
+
+#alarm-list{
+    width: 100%;
+    margin: auto;
+    margin-top: 32px;
+    list-style-type: decimal;
+    display: flex;
+    align-items: center;
+    list-style-position: inside;
+}
+
+#alarm-list li {
+    display: inline-flex;
+    background: rgba(177, 191, 220, 0.479);
+    width: fit-content;
+    margin: auto;
+    /* min-width:auto; */
+    border-radius: 20px; 
+    /* margin: 2px; */
+    padding-left: 20px;
+    align-items: center;
+    color:white;
+   
+}
+
+.list-time{
+    flex-grow: 2;
+    /* min-width: 120px; */
+    letter-spacing: 2px;
+    margin-right: 80px;
+}
+
+.list-title{
+    flex-grow: 4;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin-right: 80px;
+
+}
+
+.list-img{
+    background: rgba(255, 0, 0, 0.575);
+    border-radius: 0px 15px 15px 0px;
+}
+
