@@ -79,9 +79,10 @@ body {
 
 #alarm-submit-btn{
    width: 90%;
+   color:aliceblue;
     min-width: 100px;
     max-width: 450px;
-   background: rgb(10, 211, 40);
+   background: rgb(15, 108, 200);
 }
 
 
@@ -103,7 +104,7 @@ body {
 
 #alarm-list li {
     display: inline-flex;
-    background: rgba(177, 191, 220, 0.479);
+    background: rgba(31, 34, 41, 0.479);
     width: fit-content;
     margin: auto;
     /* min-width:auto; */

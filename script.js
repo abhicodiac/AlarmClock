@@ -185,11 +185,17 @@ function setRealTimeClock(){
     let textTime = getCurrentTime();
     let hours = Number(textTime.slice(0, 2));
 
-    if(hours > 12){
+    if(hours == 12)
+    {
+        textTime = textTime + ' PM';
+    }
+    else if(hours < 12){
+       
+        textTime = textTime + ' AM';
+       
+    }else{
         hours -= 12;
         textTime = hours + textTime.slice(2, textTime.length) + ' PM';
-    }else{
-        textTime = textTime + ' AM';
     }
     realtimeClock.innerHTML = '';
     let timeSpan = document.createElement("span");
